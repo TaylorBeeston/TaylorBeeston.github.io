@@ -1,181 +1,172 @@
 <!DOCTYPE html>
-<html class="nojs html css_verticalspacer" lang="en-US">
- <head>
-
-  <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
-  <meta name="generator" content="2018.1.0.386"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  
-  <script type="text/javascript">
-   // Update the 'nojs'/'js' class on the html node
-document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/g, 'js');
-
-// Check that all required assets are uploaded and up-to-date
-if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.watch.js", "jquery.musemenu.js", "require.js", "resume.css"], "outOfDate":[]};
-</script>
-  
-  <title>Resume</title>
-  <!-- CSS -->
-  <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=4028541491"/>
-  <link rel="stylesheet" type="text/css" href="css/master_footer.css?crc=3797249268"/>
-  <link rel="stylesheet" type="text/css" href="css/master_header.css?crc=218134562"/>
-  <link rel="stylesheet" type="text/css" href="css/resume.css?crc=382006447" id="pagesheet"/>
-  <!-- JS includes -->
-  <!--[if lt IE 9]>
-  <script src="scripts/html5shiv.js?crc=4241844378" type="text/javascript"></script>
-  <![endif]-->
-   </head>
- <body>
-
-  <div class="clearfix borderbox" id="page"><!-- group -->
-   <div class="clearfix grpelem" id="pu270"><!-- column -->
-    <div class="browser_width colelem" id="u270-bw">
-     <div id="u270"><!-- group -->
-      <div class="clearfix" id="u270_align_to_page">
-       <div class="clip_frame grpelem" id="u421"><!-- image -->
-        <img class="block" id="u421_img" src="images/logo_transparent133x133.png?crc=3805662023" alt="" data-heightwidthratio="1" data-image-width="133" data-image-height="133"/>
-       </div>
-       <nav class="MenuBar clearfix grpelem" id="menuu273"><!-- horizontal box -->
-        <div class="MenuItemContainer clearfix grpelem" id="u281"><!-- vertical box -->
-         <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem" id="u282" href="index.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u283-4"><!-- content --><h1>Home</h1></div></a>
-        </div>
-        <div class="MenuItemContainer clearfix grpelem" id="u288"><!-- vertical box -->
-         <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem" id="u289" href="about.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u291-4"><!-- content --><h1>About</h1></div></a>
-        </div>
-        <div class="MenuItemContainer clearfix grpelem" id="u274"><!-- vertical box -->
-         <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox clearfix colelem" id="u275" href="resume.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u276-4"><!-- content --><h1>Resume</h1></div></a>
-        </div>
-        <div class="MenuItemContainer clearfix grpelem" id="u295"><!-- vertical box -->
-         <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem" id="u296" href="portfolio.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u297-4"><!-- content --><h1>Portfolio</h1></div></a>
-        </div>
-        <div class="MenuItemContainer clearfix grpelem" id="u302"><!-- vertical box -->
-         <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem" id="u305" href="contact.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u308-4"><!-- content --><h1>Contact</h1></div></a>
-        </div>
-       </nav>
-      </div>
-     </div>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="assets/styles/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+  <meta charset="UTF-8">
+  <title>Taylor Beeston | Resume</title>
+  <script src="assets/scripts/effects.js" defer></script>
+	<style type="text/css">
+		@page { size: 8.5in 11in; margin: 0.5in }
+		p { margin-left: 0.01in; text-indent: -0.01in; margin-bottom: 0.1in; direction: ltr; color: #000000; line-height: 120%; text-align: justify; orphans: 2; widows: 2; background: transparent }
+		p.western { font-family: "Tahoma", serif; font-size: 12pt; so-language: en-US }
+		p.cjk { font-family: "Tahoma"; font-size: 12pt; so-language: en-US }
+		p.ctl { font-family: "Tahoma"; font-size: 11pt; so-language: ar-SA }
+		h1 { margin-left: 0.01in; text-indent: -0.01in; margin-bottom: 0.11in; direction: ltr; color: #000000; line-height: 108%; text-align: left; page-break-inside: avoid; orphans: 2; widows: 2; background: transparent; text-decoration: underline; page-break-after: avoid }
+		h1.western { font-family: "Verdana", sans-serif; font-size: 14pt; so-language: en-US; font-weight: bold }
+		h1.cjk { font-family: "Verdana"; font-size: 14pt; so-language: en-US; font-weight: bold }
+		h1.ctl { font-family: "Verdana"; font-size: 14pt; so-language: ar-SA }
+		a:link { color: #0563c1; text-decoration: underline }
+	</style>
+</head>
+<body>
+  <header>
+    <h1>Taylor Beeston</h1>
+    <a href="https://www.github.com/TaylorBeeston/" class="github-corner" aria-label="View source on GitHub">
+      <svg width="80" height="80" viewBox="0 0 250 250" 
+           style="fill:hsl(91, 25%, 15%); color:hsl(91, 75%, 95%); position: absolute; top: 0; border: 0; right: 0; z-index: 2;" 
+           aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" 
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" 
+              fill="currentColor" class="octo-body"></path>
+      </svg>
+    </a>
+  </header>
+  <article id="big-screen">
+    <div id="resume">
+      <p class="western" style="margin-left: 0in; text-indent: 0in; margin-bottom: 0in; line-height: 108%" align="left">
+      <font face="Arial, serif"><font style="font-size: 28pt" size="6"><u><b>TAYLOR
+      K. BEESTON	</b></u></font></font><font face="Arial, serif"><font style="font-size: 28pt" size="6"><b>
+      </b></font></font><font face="Times New Roman, serif"> </font>
+      </p>
+      <p class="western" style="margin-left: 0in; text-indent: 0in; margin-bottom: 0.17in; line-height: 98%" align="left">
+      <font face="Arial, serif">Arlington, WA 98223 • 425-293-3538 •
+      beeston.taylor@gmail.com • taylorbeeston.github.io</font></p>
+      <h1 class="western" style="margin-left: 0in; text-indent: 0in; margin-top: 0in; margin-bottom: 0.07in">
+      <font face="Arial, serif">Qualifications Profile</font><font face="Arial, serif"><font style="font-size: 12pt" size="3"><span style="text-decoration: none"><span style="font-weight: normal">
+      </span></span></font></font>
+      </h1>
+      <p class="western" style="margin-bottom: 0in; line-height: 108%"><font style="font-size: 11pt" size="2">General
+      programming and computer enthusiast with a passion for learning,
+      developing, mathematics, and engineering. Technically savvy; able to
+      quickly comprehend and employ new systems, abstract concepts, and
+      technologies. Adept at collaborating cross-functionally to achieve
+      optimal results in adherence to timelines and standards. Always
+      comfortable learning quickly in an unfamiliar setting.</font></p>
+      <br />
+      <h1 class="western" style="margin-top: 0in; margin-bottom: 0.07in"><font face="Arial, serif">Experience
+      Highlights</font><font face="Arial, serif"><font style="font-size: 12pt" size="3"><span style="text-decoration: none"><span style="font-weight: normal">
+      </span></span></font></font>
+      </h1>
+      <p class="western" style="margin-left: 0in; text-indent: 0in; margin-bottom: 0in; line-height: 108%" align="left">
+      <font style="font-size: 11pt" size="2">Liberty University, </font><font style="font-size: 11pt" size="2">Lynchburg,
+      VA</font><font style="font-size: 11pt" size="2"> 		2018 – Present</font></p>
+      <p class="western" style="margin-left: 0in; text-indent: 0in; margin-top: 0.01in; margin-bottom: 0.01in; line-height: 108%" align="left">
+      <font style="font-size: 11pt" size="2"><b>Web Development Student</b></font></p>
+      <ul>
+        <li><p style="text-indent: 0in; margin-top: 0.03in; margin-bottom: 0in; line-height: 108%" align="left"><a name="_GoBack"></a>
+        <font style="font-size: 11pt" size="2">Gained valuable insight into
+        the structure of a corporation, including powerful techniques for
+        successfully implementing lasting change</font></p>
+        </li><li><p style="text-indent: 0in; margin-top: 0.03in; margin-bottom: 0in; line-height: 108%" align="left">
+        <font style="font-size: 11pt" size="2">Created professional
+        applications using technologies like Java, PHP, and Javascript</font></p>
+        </li><li><p style="text-indent: 0in; margin-top: 0.03in; margin-bottom: 0in; line-height: 108%" align="left">
+        <font style="font-size: 11pt" size="2">Maintained a 4.0 GPA</font></p>
+      </li></ul>
+      <p class="western" style="margin-left: 0in; text-indent: 0in; margin-top: 0.17in; margin-bottom: 0in; line-height: 108%" align="left">
+      <font style="font-size: 11pt" size="2">Hexcel Corp, Burlington,
+      WA		2015 – Present</font></p>
+      <p class="western" style="margin-left: 0in; text-indent: 0in; margin-top: 0.01in; margin-bottom: 0.01in; line-height: 108%" align="left">
+      <font style="font-size: 11pt" size="2"><b>CNC Operator</b></font></p>
+      <ul>
+        <li><p style="text-indent: 0in; margin-top: 0.03in; margin-bottom: 0in; line-height: 108%">
+        <font style="font-size: 11pt" size="2">Oversee operation of large
+        CNC 5-Axis Routers</font></p>
+        </li><li><p style="text-indent: 0in; margin-top: 0.03in; margin-bottom: 0in; line-height: 108%">
+        <font style="font-size: 11pt" size="2">Efficiently cut, sand, clean,
+        and inspect carbon fiber airplane parts according to standards</font></p>
+        </li><li><p style="text-indent: 0in; margin-top: 0.03in; margin-bottom: 0in; line-height: 108%">
+        <font style="font-size: 11pt" size="2">Recognized by Supervisors as
+        a flexible, efficient worker, with an outstanding aptitude for
+        technology</font></p>
+        </li><li><p style="text-indent: 0in; margin-top: 0.03in; margin-bottom: 0in; line-height: 108%">
+        <font style="font-size: 11pt" size="2">Devote over 20% of working
+        hours to completing special projects for all areas of the company,
+        such as converting paper documents to a digital format, updating the
+        workflows of various processes, and creating highly tailored
+        software used in various areas of the company</font></p>
+      </li></ul>
+      <p class="western" style="margin-left: 0in; text-indent: 0in; margin-top: 0.17in; margin-bottom: 0in; line-height: 108%" align="left">
+      <font style="font-size: 11pt" size="2">TERRA Staffing, Everett,
+      WA		2013 – 2015</font></p>
+      <p class="western" style="margin-left: 0in; text-indent: 0in; margin-top: 0.01in; margin-bottom: 0.01in; line-height: 108%" align="left">
+      <font style="font-size: 11pt" size="2"><b>Temp	</b></font></p>
+      <ul>
+        <li><p style="text-indent: 0in; margin-top: 0.03in; margin-bottom: 0in; line-height: 108%">
+        <font style="font-size: 11pt" size="2">Conducted general labor,
+        including landscaping, shipping and receiving, and silk screening</font></p>
+        </li><li><p style="text-indent: 0in; margin-top: 0.03in; margin-bottom: 0in; line-height: 108%">
+        <font style="font-size: 11pt" size="2">Called on to lead and
+        motivate when a current member of leadership had quit</font></p>
+      </li></ul>
+      <p class="western" style="margin-left: 0in; text-indent: 0in; margin-bottom: 0in; line-height: 108%" align="left">
+      <br>
+      
+      </p>
+      <h1 class="western" style="margin-top: 0in; margin-bottom: 0.07in"><font face="Arial, serif">Education</font><font face="Arial, serif"><font style="font-size: 12pt" size="3"><span style="text-decoration: none"><span style="font-weight: normal">
+      </span></span></font></font>
+      </h1>
+      <p class="western" style="margin-left: 0in; text-indent: 0in; margin-top: 0.06in; margin-bottom: 0in; line-height: 108%" align="left">
+      <font style="font-size: 11pt" size="2"><b>Certificate in Web
+      Development (August 2019) | </b></font><font style="font-size: 11pt" size="2">Liberty
+      University</font></p>
+      <p class="western" style="margin-left: 0in; text-indent: 0in; margin-top: 0.06in; margin-bottom: 0in; line-height: 108%" align="left">
+      <font style="font-size: 11pt" size="2"><b>Courses Completed Toward an
+      Associates of Arts (2012-14) | </b></font><font style="font-size: 11pt" size="2">Everett
+      Community College</font><font style="font-size: 11pt" size="2"><b>  </b></font>
+      </p>
+      <p class="western" style="margin-left: 0in; text-indent: 0in; margin-top: 0.17in; margin-bottom: 0.07in; line-height: 108%" align="left">
+      <font face="Arial, serif"><font style="font-size: 14pt" size="4"><u><b>Technical
+      Skills </b></u></font></font>
+      </p>
+      <ul>
+        <li><p style="text-indent: 0in; margin-top: 0.03in; margin-bottom: 0in; line-height: 108%" align="left">
+        <font style="font-size: 11pt" size="2">Experience with JavaScript,
+        Java, C, C++, Ruby, Rails, LISP, Python, and PHP. </font>
+        </p>
+        </li><li><p style="text-indent: 0in; margin-top: 0.03in; margin-bottom: 0in; line-height: 108%" align="left">
+        <font style="font-size: 11pt" size="2">Strong knowledge of Microsoft
+        Office Suite, including SharePoint, Excel, and InfoPath.</font></p>
+        </li><li><p style="text-indent: 0in; margin-top: 0.03in; margin-bottom: 0in; line-height: 108%" align="left">
+        <font style="font-size: 11pt" size="2">Familiarity with React,
+        Node.js, Angular, Flask, and Ruby on Rails.</font></p>
+        </li><li><p style="text-indent: 0in; margin-top: 0.03in; margin-bottom: 0in; line-height: 108%" align="left">
+        <font style="font-size: 11pt" size="2">	Comfortable developing in a
+        UNIX/Linux environment, with a strong understanding of the
+        underlying Operating System.</font></p>
+        </li><li><p style="text-indent: 0in; margin-top: 0.03in; margin-bottom: 0in; line-height: 108%" align="left">
+        <font style="font-size: 11pt" size="2">Dedication to Information
+        Security, including a working knowledge of PCI DSS, HIPAA, GLBA,
+        SOX, COBIT, ISO 27001, and FISMA.</font></p>
+        </li><li><p style="text-indent: 0in; margin-top: 0.03in; margin-bottom: 0in; line-height: 108%" align="left">
+        <font style="font-size: 11pt" size="2">Possession of developed
+        habits and best practices towards clean, readable, and
+        self-documenting code </font>
+        </p>
+      </li></ul>
     </div>
-    <div class="clearfix colelem" id="pu462"><!-- group -->
-     <div class="browser_width grpelem" id="u462-bw">
-      <div id="u462"><!-- simple frame --></div>
-     </div>
-     <div class="browser_width grpelem" id="u469-bw">
-      <div id="u469"><!-- column -->
-       <div class="clearfix" id="u469_align_to_page">
-        <div class="clearfix colelem" id="u477-4"><!-- content -->
-         <h1 class="title">Resume</h1>
-        </div>
-        <div class="clearfix colelem" id="u465-76"><!-- content -->
-         <h2 class="head"><span id="u465">TAYLOR K. BEESTON&nbsp; </span></h2>
-         <p id="u465-5">12515 Burn Road • Arlington, WA 98223 • Cell 425-293-3538 • beeston.taylor@gmail.com • github.com/TaylorBeeston</p>
-         <p id="u465-6">&nbsp;</p>
-         <p class="subhead">Qualifications Profile</p>
-         <p id="u465-10">
-           General programming and computer enthusiast with a passion for learning, developing, mathematics, and engineering.
-           Technically savvy; able to quickly comprehend and employ new systems, abstract concepts, and technologies.
-           Adept at collaborating cross-functionally to achieve optimal results in adherence to timelines and standards. Always
-           comfortable learning quickly in an unfamiliar setting.
-         </p>
-         <p id="u465-17">&nbsp;</p>
-         <p id="u465-55">&nbsp;</p>
-         <p class="subhead">Experience Highlights</p>
-         <p>Liberty University, Lynchburg, VA</p>
-         <p>&nbsp;&nbsp;2018 - Present</p>
-         <p><b>Web Development Student</b></p>
-         <ul>
-           <li>Gained valuable insight into the structure of a corporation, including powerful techniques for successfully implementing lasting change</li>
-           <li>Created professional applications using technologies like Java, PHP, and Javascript</li>
-           <li>Maintained a 4.0 GPA</li>
-         </ul>
-         <p>&nbsp;</p>
-         <p>Hexcel Corp, Burlington, WA</p>
-         <p>&nbsp;&nbsp;2015 - Present</p>
-         <p><b>CNC Operator</b></p>
-         <ul>
-           <li>Oversee operation of large CNC 5-Axis Routers</li>
-           <li>Efficiently cut, sand, clean, and inspect carbon fiber airplane parts according to standards</li>
-           <li>Recognized by Supervisors as a flexible, efficient worker, with an outstanding aptitude for technology</li>
-           <li id="u465-54">Devote about 20% of working hours to completing special projects for all areas of the company, such as converting paper documents to a digital format, and updating the workflows of various processes</li>
-         </ul>
-         <p>&nbsp;</p>
-         <p>TERRA Staffing, Everett, WA</p>
-         <p>&nbsp;&nbsp;2013-2015</p>
-         <p><b>Temp</b></p>
-         <ul>
-           <li>Conducted general labor, including landscaping, shipping and receiving, and silk screening</li>
-           <li>Called on to lead and motivate when a current member of leadership had quit</li>
-         </ul>
-         <p>&nbsp;</p>
-         <p class="subhead">Education</p>
-         <p id="u465-73"><b>Certificate in Web Development (August 2019) | </b>Liberty University</p>
-         <p id="u465-73"><b>Courses Completed Toward an Associates of Arts (2012-14) | </b>Everett Community College</p>
-         <p id="u465-74">&nbsp;</p>
-         <p class="subhead">Technical Skills</p>
-         <ul>
-           <li id="u465-50">Experience with JavaScript, Java, C, C++, Ruby, VBA, LISP, Python, and PHP</li>
-           <li id="u465-50">Strong knowledge of Microsoft Office Suite, including SharePoint, Excel, and InfoPath</li>
-           <li id="u465-52">Familiarity with React, Node.js, Angular, Flask, and Ruby on Rails</li>
-           <li id="u465-54">Comfortable developing in a UNIX/Linux environment, with a strong understanding of the underlying Operating System</li>
-           <li id="u465-54">Dedication to Information Security, including a working knowledge of PCI DSS, HIPAA, GLBA, SOX, COBIT, ISO 27001, and FISMA</li>
-           <li id="u465-54">Possession of developed habits and best practices towards clean, readable, and self-documenting code</li>
-         </ul>
-        </div>
-       </div>
-      </div>
-     </div>
-    </div>
-   </div>
-   <div class="verticalspacer" data-offset-top="1044" data-content-above-spacer="1043" data-content-below-spacer="61" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
-   <div class="browser_width grpelem" id="u257-bw">
-    <div id="u257"><!-- group -->
-     <div class="clearfix" id="u257_align_to_page">
-      <nav class="MenuBar clearfix grpelem" id="menuu147"><!-- horizontal box -->
-       <div class="MenuItemContainer clearfix grpelem" id="u155"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem" id="u158" href="index.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u159-4"><!-- content --><h1>Home</h1></div></a>
-       </div>
-       <div class="MenuItemContainer clearfix grpelem" id="u148"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem" id="u149" href="about.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u150-4"><!-- content --><h1>About</h1></div></a>
-       </div>
-       <div class="MenuItemContainer clearfix grpelem" id="u193"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox clearfix colelem" id="u194" href="resume.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u196-4"><!-- content --><h1>Resume</h1></div></a>
-       </div>
-       <div class="MenuItemContainer clearfix grpelem" id="u214"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem" id="u215" href="portfolio.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u216-4"><!-- content --><h1>Portfolio</h1></div></a>
-       </div>
-       <div class="MenuItemContainer clearfix grpelem" id="u235"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem" id="u236" href="contact.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u239-4"><!-- content --><h1>Contact</h1></div></a>
-       </div>
-      </nav>
-     </div>
-    </div>
-   </div>
-  </div>
-  <!-- Other scripts -->
-  <script type="text/javascript">
-   // Decide whether to suppress missing file error or not based on preference setting
-var suppressMissingFileError = false
-</script>
-  <script type="text/javascript">
-   window.Muse.assets.check=function(c){if(!window.Muse.assets.checked){window.Muse.assets.checked=!0;var b={},d=function(a,b){if(window.getComputedStyle){var c=window.getComputedStyle(a,null);return c&&c.getPropertyValue(b)||c&&c[b]||""}if(document.documentElement.currentStyle)return(c=a.currentStyle)&&c[b]||a.style&&a.style[b]||"";return""},a=function(a){if(a.match(/^rgb/))return a=a.replace(/\s+/g,"").match(/([\d\,]+)/gi)[0].split(","),(parseInt(a[0])<<16)+(parseInt(a[1])<<8)+parseInt(a[2]);if(a.match(/^\#/))return parseInt(a.substr(1),
-16);return 0},f=function(f){for(var g=document.getElementsByTagName("link"),j=0;j<g.length;j++)if("text/css"==g[j].type){var l=(g[j].href||"").match(/\/?css\/([\w\-]+\.css)\?crc=(\d+)/);if(!l||!l[1]||!l[2])break;b[l[1]]=l[2]}g=document.createElement("div");g.className="version";g.style.cssText="display:none; width:1px; height:1px;";document.getElementsByTagName("body")[0].appendChild(g);for(j=0;j<Muse.assets.required.length;){var l=Muse.assets.required[j],k=l.match(/([\w\-\.]+)\.(\w+)$/),i=k&&k[1]?
-k[1]:null,k=k&&k[2]?k[2]:null;switch(k.toLowerCase()){case "css":i=i.replace(/\W/gi,"_").replace(/^([^a-z])/gi,"_$1");g.className+=" "+i;i=a(d(g,"color"));k=a(d(g,"backgroundColor"));i!=0||k!=0?(Muse.assets.required.splice(j,1),"undefined"!=typeof b[l]&&(i!=b[l]>>>24||k!=(b[l]&16777215))&&Muse.assets.outOfDate.push(l)):j++;g.className="version";break;case "js":j++;break;default:throw Error("Unsupported file type: "+k);}}c?c().jquery!="1.8.3"&&Muse.assets.outOfDate.push("jquery-1.8.3.min.js"):Muse.assets.required.push("jquery-1.8.3.min.js");
-g.parentNode.removeChild(g);if(Muse.assets.outOfDate.length||Muse.assets.required.length)g="Some files on the server may be missing or incorrect. Clear browser cache and try again. If the problem persists please contact website author.",f&&Muse.assets.outOfDate.length&&(g+="\nOut of date: "+Muse.assets.outOfDate.join(",")),f&&Muse.assets.required.length&&(g+="\nMissing: "+Muse.assets.required.join(",")),suppressMissingFileError?(g+="\nUse SuppressMissingFileError key in AppPrefs.xml to show missing file error pop up.",console.log(g)):alert(g)};location&&location.search&&location.search.match&&location.search.match(/muse_debug/gi)?
-setTimeout(function(){f(!0)},5E3):f()}};
-var muse_init=function(){require.config({baseUrl:""});require(["jquery","museutils","whatinput","jquery.musemenu","jquery.watch"],function(c){var $ = c;$(document).ready(function(){try{
-window.Muse.assets.check($);/* body */
-Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
-Muse.Utils.prepHyperlinks(true);/* body */
-Muse.Utils.resizeHeight('.browser_width');/* resize height */
-Muse.Utils.requestAnimationFrame(function() { $('body').addClass('initialized'); });/* mark body as initialized */
-Muse.Utils.makeButtonsVisibleAfterSettingMinWidth();/* body */
-Muse.Utils.initWidget('.MenuBar', ['#bp_infinity'], function(elem) { return $(elem).museMenu(); });/* unifiedNavBar */
-Muse.Utils.fullPage('#page');/* 100% height page */
-Muse.Utils.showWidgetsWhenReady();/* body */
-Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
-}catch(b){if(b&&"function"==typeof b.notify?b.notify():Muse.Assert.fail("Error calling selector function: "+b),false)throw b;}})})};
-
-</script>
-  <!-- RequireJS script -->
-  <script src="scripts/require.js?crc=7928878" type="text/javascript" async data-main="scripts/museconfig.js?crc=310584261" onload="if (requirejs) requirejs.onError = function(requireType, requireModule) { if (requireType && requireType.toString && requireType.toString().indexOf && 0 <= requireType.toString().indexOf('#scripterror')) window.Muse.assets.check(); }" onerror="window.Muse.assets.check();"></script>
-   </body>
+  </article>
+  <footer>
+    <a href="https://icons8.com/icon/48708/github">Icons by Icons8</a>
+    <nav class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </footer>
+</body>
 </html>
