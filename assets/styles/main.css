@@ -132,7 +132,7 @@ footer > a {
 .portfolio-site {
   display: block;
   width: 80%;
-  margin: 16px auto;
+  margin: 128px auto;
   padding: 24px;
   background-color: hsl(136, 20%, 90%);
   text-decoration: none;
@@ -161,13 +161,14 @@ footer > a {
 
 .portfolio-site > img {
   display: block;
-  margin: auto;
+  margin: 16px auto;
   border-radius: 8px;
   box-shadow: inset 0 0 8px hsl(136, 5%, 75%);
 }
 
 .portfolio-site > p {
   color: hsl(136, 10%, 10%);
+  margin-top: 32px;
 }
 
 .contact-links {
