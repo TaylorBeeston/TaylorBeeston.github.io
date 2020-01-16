@@ -2,13 +2,32 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" href="assets/styles/main.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="assets/styles/github-corner.css">
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
   <meta charset="UTF-8">
   <title>Taylor Beeston | Portfolio</title>
   <script src="assets/scripts/effects.js" defer></script>
 </head>
 <body>
   <header>
+    <nav role="navigation" id="header-links">
+      <div id="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="resume.html">Resume</a>
+          <a href="contact.html">Contact</a>
+        </ul>
+      </div>
+    </nav>
     <h1>Taylor Beeston</h1>
     <a href="https://www.github.com/TaylorBeeston/" class="github-corner" aria-label="View source on GitHub">
       <svg width="80" height="80" viewBox="0 0 250 250" 
@@ -26,36 +45,41 @@
     <div class="title">
       <h1>Portfolio</h1>
     </div>
-    <div class="pen">
-      <p class="codepen" data-height="300" data-theme-id="default" data-default-tab="result" data-user="taylorbeeston" data-slug-hash="bGGKJej" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Pac-Man">
-        <span>See the Pen <a href="https://codepen.io/taylorbeeston/pen/bGGKJej">
-        Pac-Man</a> by Taylor Beeston (<a href="https://codepen.io/taylorbeeston">@taylorbeeston</a>)
-        on <a href="https://codepen.io">CodePen</a>.</span>
-      </p>
-    </div>
     <div class="portfolio">
-      <a href="https://taylorbeeston.github.io/Calculator" class="portfolio-site">
+      <a href="https://taylorbeeston.github.io/Calculator" class="portfolio-site"
+        style="--bg: url(../images/calculator.png)"
+      >
         <h1>Calculator</h1>
-        <img src="assets/images/calculator.png" alt="Calculator">
         <p>A simple calculator app built for The Odin Project.</p>
         <p>It is built entirely with vanilla HTML, CSS, and JavaScript!</p>
       </a>
-      <a href="https://taylorbeeston.github.io/RockPaperScissors" class="portfolio-site">
+      <a href="https://taylorbeeston.github.io/RockPaperScissors" class="portfolio-site"
+        
+        style="--bg: url(../images/rps.png)"
+      >
         <h1>Rock, Paper, Scissors</h1>
-        <img src="assets/images/rps.png" alt="Rock, Paper, Scissors">
         <p>Rock, Paper, Scissors is a super simple web game that I bult for The Odin Project!</p>
         <p>It is built entirely with vanilla HTML, CSS, and JavaScript!</p>
       </a>
-      <div class="pen">
-        <p class="codepen" data-height="935" data-theme-id="default" data-default-tab="result" data-user="taylorbeeston" data-slug-hash="GRRepQx" data-preview="true" style="height: 935px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="React Minesweeper [WIP]">
-          <span>See the Pen <a href="https://codepen.io/taylorbeeston/pen/GRRepQx">
-          React Minesweeper [WIP]</a> by Taylor Beeston (<a href="https://codepen.io/taylorbeeston">@taylorbeeston</a>)
-          on <a href="https://codepen.io">CodePen</a>.</span>
+      <a href="https://codepen.io/taylorbeeston/pen/GRRepQx" class="portfolio-site"
+        
+        style="--bg: url(../images/minesweeper.png)"
+      >
+        <h1>Minesweeper</h1>
+        <p>
+          This is the classic game Minesweeper! I used to play this a ton back on
+          Windows XP, so I tried to make it look at least a little bit similar to
+          that version.
         </p>
-      </div>
-      <a href="https://booksmarts.herokuapp.com" class="portfolio-site">
+        <p>
+          It is built using React on CodePen, however, I did do quite a bit of of
+          work to it locally, which is why there are JSDoc Comments.
+        </p>
+      </a>
+      <a href="https://booksmarts.herokuapp.com" class="portfolio-site"
+        style="--bg: url(../images/booksmarts.png)"
+      >
         <h1>Booksmarts</h1>
-        <img src="assets/images/booksmarts.png" alt="Booksmarts">
         <p>Booksmarts is a web app that I created to help me keep track of books.</p>
         <p>
           It is built with Rails 6, uses the new Action Text as one of its main
@@ -63,22 +87,17 @@
           Travis CI, Dependabot, and Mergiy.
         </p>
       </a>
-      <a href="https://taylorbeeston.github.io/EtchASketch" class="portfolio-site">
+      <a href="https://taylorbeeston.github.io/EtchASketch" class="portfolio-site"
+        style="--bg: url(../images/etchasketch.png)"
+      >
         <h1>Etch A Sketch</h1>
-        <img src="assets/images/etchasketch.png" alt="Etch A Sketch">
         <p>A dead simple "Etch A Sketch" that I built for The Odin Project!</p>
         <p>It is built entirely with vanilla HTML, CSS, and JavaScript!</p>
       </a>
-      <div class="pen">
-        <p class="codepen" data-height="387" data-theme-id="default" data-default-tab="result" data-user="taylorbeeston" data-slug-hash="Rwwvybe" style="height: 387px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="React Clock">
-          <span>See the Pen <a href="https://codepen.io/taylorbeeston/pen/Rwwvybe">
-          React Clock</a> by Taylor Beeston (<a href="https://codepen.io/taylorbeeston">@taylorbeeston</a>)
-          on <a href="https://codepen.io">CodePen</a>.</span>
-        </p>
-      </div>
-      <a href="http://ashleysbrother.com" class="portfolio-site">
+      <a href="http://ashleysbrother.com" class="portfolio-site"
+        style="--bg: url(../images/ashleysbrother.jpg)"
+      >
         <h1>Ashley's Brother (Music Site)</h1>
-        <img src="assets/images/ashleysbrother.jpg" alt="Ashley's Brother">
         <p>
           Before I was a Developer, I was a Music Producer, and ashleysbrother.com
           is where I host all of my music!
@@ -89,18 +108,20 @@
           playing throughout navigation of the site.
         </p>
       </a>
-      <a href="https://taylorbeeston.github.io/Library" class="portfolio-site">
+      <a href="https://taylorbeeston.github.io/Library" class="portfolio-site"
+        style="--bg: url(../images/library.png)"
+      >
         <h1>Library</h1>
-        <img src="assets/images/library.png" alt="Library">
         <p>A simple Library app built for The Odin Project</p>
         <p>
           It is built entirely with vanilla HTML, CSS, and JavaScript, and uses
           localStorage to keep track of your personal library.
         </p>
       </a>
-      <a href="https://godstoolbox.herokuapp.com" class="portfolio-site">
+      <a href="https://godstoolbox.herokuapp.com" class="portfolio-site"
+        style="--bg: url(../images/godstoolbox.png)"
+      >
         <h1>God's Toolbox</h1>
-        <img src="assets/images/godstoolbox.png" alt="God's Toolbox">
         <p>
           God's Toolbox is a fake E-Commerce website for a fake Non-Profit
         </p>
@@ -112,23 +133,12 @@
         </p>
       </a>
     </div>
-    <div class="pen">
-      <p class="codepen" data-height="265" data-theme-id="default" data-default-tab="result" data-user="taylorbeeston" data-slug-hash="mddzQqg" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Pac-Man Chase">
-        <span>See the Pen <a href="https://codepen.io/taylorbeeston/pen/mddzQqg">
-        Pac-Man Chase</a> by Taylor Beeston (<a href="https://codepen.io/taylorbeeston">@taylorbeeston</a>)
-        on <a href="https://codepen.io">CodePen</a>.</span>
-      </p>
-      <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-    </div>
+    <footer>
+      <a href="https://icons8.com/icon/48708/github">Icons by Icons8</a>
+      <span>
+        Made with <span style="color: #e25555;">&hearts;</span> in Washington State
+      </span>
+    </footer>
   </article>
-  <footer>
-    <a href="https://icons8.com/icon/48708/github">Icons by Icons8</a>
-    <nav class="footer-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="resume.html">Resume</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </footer>
 </body>
 </html>
