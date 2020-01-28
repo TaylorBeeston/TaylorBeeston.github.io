@@ -1,0 +1,292 @@
+$theme: hsl(208, 79%, 28%);
+$hue: 208;
+$sat: 79%;
+$lightness: 28%;
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl($hue, 10%, 80%);
+  font-family: "Avenir Next", "Avenir", "Roboto", sans-serif;
+}
+
+footer {
+  width: 100%;
+  border-top: thin solid $theme;
+  
+  > nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    > a {
+      flex: 1;
+      text-justify: center;
+      display: flex;
+      justify-content: center;
+      color: darken($theme, 20%);
+      text-decoration: none;
+      padding: 16px 8px;
+      border-right: thin solid $theme;
+
+      &.current {
+        background-color: lighten($theme, 67%);
+      }
+    }
+  }
+}
+
+#big-screen {
+  margin: 0;
+  padding: 24px;
+  background-color: hsl($hue, 10%, 80%);
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+#splash {
+  object-fit: cover;
+  height: 60vh;
+  width: auto;
+  max-width: 80%;
+  max-height: 666.667px;
+  margin: 16px auto;
+  border-radius: 8px;
+  box-shadow: inset 0 0 2px hsl($hue, 10%, 5%), 0 10px 10px hsl($hue, 10%, 25%);
+}
+
+.title {
+  width: 75%;
+  margin: 16px auto;
+  background-color: hsl($hue, 10%, 90%);
+  text-align: center;
+  border-radius: 0 48px 0 48px;
+  box-shadow: inset 0 0 10px hsl($hue, 10%, 55%);
+
+  > h1 {
+    font-size: 2.5em;
+    font-family: "Palatino";
+  }
+}
+
+.content {
+  width: 80%;
+  margin: 0 auto;
+  padding: 24px;
+  background-color: hsl($hue, 20%, 90%);
+  font-size: 1.2em;
+  letter-spacing: 1.2px;
+  line-height: 1.9em;
+  text-indent: 5%;
+  border-left: 8px solid $theme;
+  box-shadow: inset 0 0 50px hsl($hue, 25%, 95%);
+  border-radius: 0 24px 24px 0;
+  transition: width 1s, font-size 1.2s 0.4s;
+}
+
+#portfolio {
+  margin: 16px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
+  grid-gap: 32px;
+  grid-auto-flow: dense;
+  place-items: stretch;
+}
+
+.portfolio-site {
+  overflow: hidden;
+  position: relative;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 1.2em;
+  box-shadow: inset 0 0 50px hsl($hue, 25%, 95%);
+  transition: width 1s, font-size 1.2s 0.4s;
+  border: 1px solid $theme;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    background-image: var(--bg);
+    background-size: cover;
+    background-position: 0% 0%;
+    width: 100%;
+    height: 100%;
+    filter: blur(16px);
+    transition: background-position 5s 0.5s, filter 0.5s;
+  }
+
+  &:hover::before {
+    background-position: 100% 100%;
+    filter: blur(4px);
+  }
+}
+
+.site-info {
+  width: 90%;
+  height: 90%;
+  background: radial-gradient(closest-side, $theme, transparent);
+  opacity: 80%;
+
+  > * {
+    position: relative;
+    color: white;
+    text-shadow: 0 0 1px black, 1px 1px 0 $theme;
+    text-align: center;
+  }
+
+  > h1 {
+    font-size: 2em;
+    letter-spacing: 3px;
+  }
+
+  > p {
+    font-size: 0;
+    margin: 8px;
+    transition: font-size 0.5s;
+  }
+}
+
+.portfolio-site:hover p,
+.site-info:hover > p {
+  font-size: 1.3em;
+}
+
+.contact-links {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(45vw, 1fr));
+  grid-gap: 16px;
+  grid-auto-flow: dense;
+  place-items: stretch;
+
+  > a {
+    position: relative;
+    text-align: center;
+    padding: 8px;
+    overflow: hidden;
+    border: thin solid $theme;
+    text-decoration: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-image: var(--bg);
+      background-size: cover;
+      filter: blur(16px);
+    }
+
+    > h1 {
+      position: relative;
+      font-size: 2em;
+      color: white;
+      text-shadow: 0 0 1px black, 1px 1px 0 $theme;
+    }
+  }
+}
+
+/* Fancy letter i */
+
+.letter {
+  display: inline-block;
+  margin: 0;
+  line-height: 0.55;
+}
+
+.stack {
+  display: block;
+}
+
+@keyframes bounce {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, -10px, 0);
+  }
+}
+
+@keyframes fly-in {
+  from {
+    top: -800px;
+  }
+
+  to {
+    top: 0;
+  }
+}
+
+.bouncing {
+  animation: bounce 0.4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.flying-entrance {
+  position: relative;
+  animation: bounce 0.6s infinite alternate 2.4s, fly-in 2.4s;
+}
+
+/* github corner */
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out
+}
+
+@keyframes octocat-wave {
+  0%, 100% {
+    transform: rotate(0)
+  }
+  20%,60% {
+    transform: rotate(-25deg)
+  }
+  40%,80% {
+    transform: rotate(10deg)
+  }
+}
+
+@media (max-width:500px) {
+  .github-corner:hover .octo-arm {
+    animation: none
+  }
+  
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out
+  }
+}
+
+.github-corner > svg {
+  fill: $theme;
+  color: hsl($hue, 75%, 95%);
+}
